@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type= "email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+				
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" required></textarea>
+
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+					
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+					
+
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+					
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual o horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+			    </fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidade por email?</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar">
+			</form>
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+			    </thead>
+			    <tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+		<footer>
+			<img src="logo-branco.png" alt="Logo da Bardearia Alura">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+</html>
+
+///Alternativa correta! A tag label> é uma etiqueta para a entrada de dados, para o input>.
+
+///TODO ELEMENTO TEM UM TIPO DE DISPLAY OU ELE É DO TIPO INLINE OU DO TIPO BLOCK, os paragrafos são do tipo block, ocupam 100% a largura da página
+/// Os elementos do tipo INLINE ocupam somente o tamanho do seu conteúdo. Os formularion sao sempre do tipo inline, ou seja, ocupam somente o espaço que precisam e não a largura da página todo como os do tipo block
+///Qual a propriedade de um input do tipo radio que preciso criar para que eles façam parte do mesmo grupo?Alternativa correta! A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo somente um selecionado.
+///Qual a melhor abordagem quando temos uma configuração de CSS aplicada para um item e queremos replicar ela para um item parecido?Usar os seletores dos itens separados por vírgula: Essa é uma forma simples de fazermos a mesma configuração de CSS funcionar para os dois itens, sendo eles seletores dos elementos, de ids ou de classes. 
+OU Criar uma classe: - Quando temos um estilo que pode ser repetido, uma excelente estratégia é extrair isso para uma classe e usar a classe para aplicar esses estilos nos nossos elementos.
+//No último vídeo, foi vista a tag option>. Qual a sua utilidade?Para criarmos os itens selecionáveis de um select>. -Alternativa correta! A estrutura da tag select> é composta de um ou mais option>.
+//Como transformamos um campo comum em um de preenchimento obrigatório? required
+///p é a tag do parágrafo
+//Qual tag uso para criar linhas em uma tabela? tr>
+//Como dividir uma tabela de forma mais semântica?
+As tags thead>, tbody> e tfoot> ajudam a deixar o conteúdo da tabela mais bem dividido e mais semântico.
